@@ -1107,6 +1107,7 @@ function getColor(color) {
 }
 let canvas = document.getElementById("matrix");
 let ctx = canvas.getContext("2d");
+let image = document.getElementById("matrix-image");
 
 function draw(matrix) {
   let size = 512 / matrix.length;
@@ -1131,5 +1132,7 @@ switcher.addEventListener("click", e => {
   } else if (type === "32") {
     draw(matrix32x32);
   } else if (type === "img") {
+    ctx.clearRect(0, 0, 512, 512);
+    ctx.drawImage(image, 0, 0, 512, 512);
   }
 });
