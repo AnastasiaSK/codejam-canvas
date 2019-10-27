@@ -42,14 +42,17 @@ main {
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
-  padding: 5px 20px;
 }
 .tools__item {
   background-repeat: no-repeat;
   background-size: 18px;
-  background-position: 0 center;
-  padding-left: 30px;
-  margin: 10px 0;
+  background-position: 20px center;
+
+  cursor: pointer;
+  padding: 12px 50px;
+}
+.tools__item:hover {
+  color: black;
 }
 .tools__item_bucket {
   background-image: url(/assets/images/tool-paint-bucket.svg);
@@ -73,8 +76,8 @@ main {
   border: 1px solid #000;
   border-radius: 50%;
   position: absolute;
-  left: 0;
-  top: 3px;
+  left: 20px;
+  top: 14px;
 }
 .tools__item_round-gray:before {
   background-color: #c4c4c4;
@@ -87,6 +90,9 @@ main {
 }
 .tools__item_round-blue:before {
   background-color: #41b6f7;
+}
+.tools__item_bordered {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .canvas-wrapper {
   display: flex;

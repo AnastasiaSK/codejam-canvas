@@ -1136,3 +1136,5 @@ switcher.addEventListener("click", e => {
     ctx.drawImage(image, 0, 0, 512, 512);
   }
 });
+
+draw(matrix4x4);

@@ -23,7 +23,11 @@
       <aside>
         <div class="tools">
           <div class="tools__item tools__item_bucket">Paint bucket</div>
-          <div class="tools__item tools__item_choose-color">Choose color</div>
+          <div
+            class="tools__item tools__item_choose-color tools__item_bordered"
+          >
+            Choose color
+          </div>
           <div class="tools__item tools__item_move">Move</div>
           <div class="tools__item tools__item_transform">Transform</div>
         </div>
@@ -31,7 +35,9 @@
           <div class="tools__item tools__item_round tools__item_round-gray">
             Current color
           </div>
-          <div class="tools__item tools__item_round tools__item_round-green">
+          <div
+            class="tools__item tools__item_round tools__item_round-green tools__item_bordered"
+          >
             Prev color
           </div>
           <div class="tools__item tools__item_round tools__item_round-red">
@@ -45,7 +51,7 @@
       <div class="canvas-wrapper">
         <canvas id="matrix" width="512" height="512"></canvas>
         <div style="display: none;">
-          <img id="matrix-image" src="/assets/images/img.png" alt="" />
+          <img id="matrix-image" src="assets/images/img.png" alt="" />
         </div>
       </div>
 
