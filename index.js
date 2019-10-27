@@ -1126,7 +1126,10 @@ switcher.addEventListener("click", e => {
   if (!type) {
     return;
   }
-
+  document
+    .querySelector(".tools__item_selected")
+    .classList.remove("tools__item_selected");
+  e.target.classList.add("tools__item_selected");
   if (type === "4") {
     draw(matrix4x4);
   } else if (type === "32") {
