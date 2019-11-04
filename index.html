@@ -12,6 +12,60 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="pallete">
+        <div class="pallete__menu pallete__icon"></div>
+        <h1>CodeJam - Pallete</h1>
+        <div class="pallete__more-info pallete__icon"></div>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <div class="tools">
+          <div class="tools__item tools__item_bucket">Paint bucket</div>
+          <div
+            class="tools__item tools__item_choose-color tools__item_bordered"
+          >
+            Choose color
+          </div>
+          <div class="tools__item tools__item_move">Move</div>
+          <div class="tools__item tools__item_transform">Transform</div>
+        </div>
+        <div class="tools">
+          <div class="tools__item tools__item_round tools__item_round-gray">
+            Current color
+          </div>
+          <div
+            class="tools__item tools__item_round tools__item_round-green tools__item_bordered"
+          >
+            Prev color
+          </div>
+          <div class="tools__item tools__item_round tools__item_round-red">
+            red
+          </div>
+          <div class="tools__item tools__item_round tools__item_round-blue">
+            blue
+          </div>
+        </div>
+      </aside>
+      <div class="canvas-wrapper">
+        <canvas id="matrix" width="512" height="512"></canvas>
+        <div style="display: none;">
+          <img id="matrix-image" src="assets/images/img.png" alt="" />
+        </div>
+      </div>
+
+      <div class="switcher tools">
+        <div
+          class="tools__item tools__item_selected tools__item_check"
+          data-type="4"
+        >
+          4 x 4
+        </div>
+        <div class="tools__item tools__item_check" data-type="32">32 x 32</div>
+        <div class="tools__item tools__item_check" data-type="img">image</div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
